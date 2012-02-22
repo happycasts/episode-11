@@ -1,2 +1,25 @@
+你好，这一集里我们讲ubuntu系统的安装。
+我先到它的官网: www.ubuntu.com点Download
+
+到这，我们看到有普通版，也就是Desktop版，也有server版，主要区别是server版没有图形界面，只能敲命令。
+安装过程是一样的，我们以桌面版为例。
+
+这里给出了三条路：
+1 下载安装
+2 使用liveCD, 就是不用安装到硬盘，直接让机器从CD或U盘启动, 功能受限制，比较慢
+3 windows installer, 适合你既没有U盘有没有光盘，但是有网的时候
+
+旧版的ubuntu可以在releases.ubuntu.com得到。
+
+
 i386 i486...都是x86都是32位，32位平台64位平台都能装
 amd64...xxx64 都是64位，只能在64位的机器上装
+
+
+
+
+
+所以主分区最多有四个,逻辑分区可以有任意多个。windows要求系统启动分区为主分区,这个没有任何道理，是由于dos技术早期的技术缺陷造成的，是一种脑残行为。主分区和逻辑分区对于Linux使用来说没有任何区别，但是一些bios厂商会强质要求系统从主分区启动。
+
+所以保险起见，咱们装ubuntu是也把第一个分区分成主分区，并且让它做根分区，也就是启动分区。
+when I install ubuntu1104, if I get 4 primary partions, then the rest of free space will be untouable.
